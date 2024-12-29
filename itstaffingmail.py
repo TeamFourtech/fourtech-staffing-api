@@ -37,6 +37,7 @@ def send_it_staffing_email():
                 "company_info_name": company_name,
                 "first_name": first_name,
                 "last_name": last_name,
+                "name": f"{first_name} {last_name}",
                 "phone": phone,
                 "job_title": job_title,
                 "hire_type": hire_type,
