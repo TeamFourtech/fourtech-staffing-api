@@ -1,8 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 import mailtrap as mt
 import os
 
 app = Flask(__name__)
+
+# Enable CORS for the entire app
+CORS(app)
 
 @app.route('/send_it_staffing_email', methods=['POST'])
 def send_it_staffing_email():
